@@ -8,26 +8,14 @@ Mugen - Tools for building nodejs server apps.
 var FooController = new Class({
   inherits: RouteController,
   routes:{
-    'GET /foo': function(req, res, next) {
-      res.send({a:'bc'});
+    'GET /foo': function(params) {
+      this.res.send(200);
     }
   }
 });
 ```
+Each route delegate has access to res, req, and next via the local scope.
 
-##EventControllers
-
-###Example:
-```
-var FooController = new Class({
-  inherits: EventController,
-  events: {
-    'foo': function() {
-      console.log('bar');
-    }
-  }
-});
-```
 
 ##Todo
 
