@@ -1,0 +1,24 @@
+{
+  "name": "mugen",
+  "version": "0.0.0",
+  "description": "If you can dream it, the possiblities are endless",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/_mocha -R spec -t 5000"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ee-class": "^1.0.8",
+    "object-mixin": "^0.2.1",
+    "class": "^0.1.4",
+    "gozen": "git://github.com/web-mech/gozen.git#master"
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "mocha": "^1.21.4",
+    "express": "^4.8.6",
+    "body-parser": "^1.8.1",
+    "request": "^2.42.0"
+  }
+}
