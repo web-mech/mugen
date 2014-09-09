@@ -1,12 +1,15 @@
-Mugen - Tools for building nodejs server apps.
+Mugen
 =====
+Tools for building nodejs server apps.
 
 ##RouteControllers
 
 ###Example:
 ```
-var FooController = new Class({
-  inherits: RouteController,
+var RouteController = require('mugen').RouteController;
+
+var FooController = new RouteController({
+  extend: true,
   routes:{
     'GET /foo': function(params) {
       this.res.send(200);
@@ -16,6 +19,11 @@ var FooController = new Class({
 ```
 Each route delegate has access to res, req, and next via the local scope.
 
+
+###Testing
+```
+npm test
+```
 
 ##Todo
 
